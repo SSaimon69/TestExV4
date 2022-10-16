@@ -21,11 +21,26 @@ namespace MainAppClient
                 text = stream.ReadToEnd();
             }
             read.Stop();
-            Console.WriteLine($"Чтение файла заняло {read.ElapsedMilliseconds} мс");
+            Console.Write("Чтение файла заняло ");
+            WriteColorYellow(read.ElapsedMilliseconds.ToString());
+            Console.WriteLine(" мс");
+
+
+            //Создаем экземпляр клиента и информируем о его состоянии
+            CalcServiceReference.ServiceClient client = new CalcServiceReference.ServiceClient();
+            Console.Write("Служба по адресу ");
+            WriteColorYellow(client.Endpoint.Address.ToString());
+            Console.Write(" находится в состоянии ");
+            WriteColorYellow(client.State.ToString());
+            Console.WriteLine();
 
             //Передача файла и получение результата
-            CalcServiceReference.ServiceClient client = new CalcServiceReference.ServiceClient();
+            Stopwatch calc = Stopwatch.StartNew();
             var map = client.CalculateWordMultiService(text);
+            calc.Stop();
+            Console.Write("Передача файла и его обработка заняла ");
+            WriteColorYellow(calc.ElapsedMilliseconds.ToString());
+            Console.WriteLine(" мс");
 
             //Сортировка
             var sort = map.OrderByDescending(x => x.Value);
@@ -37,9 +52,17 @@ namespace MainAppClient
                 {
                     sw.WriteLine(x.Key + " " + x.Value);
                 }
+                Console.WriteLine("Результаты вычислений сохранены в файл textOut.txt");
             }
-
+            Console.WriteLine("Нажмите любую кнопку для выхода");
             Console.ReadKey();
+        }
+
+        static void WriteColorYellow(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(text);
+            Console.ResetColor();
         }
     }
 }

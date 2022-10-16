@@ -1,0 +1,8 @@
+C:\Users\semen\source\repos\TestExV4\MainAppClient\bin\Debug\MainAppClient.exe.config
+C:\Users\semen\source\repos\TestExV4\MainAppClient\bin\Debug\MainAppClient.exe
+C:\Users\semen\source\repos\TestExV4\MainAppClient\bin\Debug\MainAppClient.pdb
+C:\Users\semen\source\repos\TestExV4\MainAppClient\obj\Debug\MainAppClient.csproj.AssemblyReference.cache
+C:\Users\semen\source\repos\TestExV4\MainAppClient\obj\Debug\MainAppClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\semen\source\repos\TestExV4\MainAppClient\obj\Debug\MainAppClient.csproj.CoreCompileInputs.cache
+C:\Users\semen\source\repos\TestExV4\MainAppClient\obj\Debug\MainAppClient.exe
+C:\Users\semen\source\repos\TestExV4\MainAppClient\obj\Debug\MainAppClient.pdb

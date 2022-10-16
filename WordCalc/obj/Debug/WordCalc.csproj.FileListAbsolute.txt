@@ -1,0 +1,6 @@
+C:\Users\semen\source\repos\TestExV4\WordCalc\bin\Debug\WordCalc.dll
+C:\Users\semen\source\repos\TestExV4\WordCalc\bin\Debug\WordCalc.pdb
+C:\Users\semen\source\repos\TestExV4\WordCalc\obj\Debug\WordCalc.csproj.AssemblyReference.cache
+C:\Users\semen\source\repos\TestExV4\WordCalc\obj\Debug\WordCalc.csproj.CoreCompileInputs.cache
+C:\Users\semen\source\repos\TestExV4\WordCalc\obj\Debug\WordCalc.dll
+C:\Users\semen\source\repos\TestExV4\WordCalc\obj\Debug\WordCalc.pdb
